@@ -1,0 +1,10 @@
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\obj\Debug\Senparc.Weixin.Cache.Memcached.csprojResolveAssemblyReference.cache
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\bin\Debug\Senparc.Weixin.Cache.Memcached.dll
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\bin\Debug\Senparc.Weixin.Cache.Memcached.pdb
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\bin\Debug\Enyim.Caching.dll
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\bin\Debug\Lime.Weixin.dll
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\bin\Debug\Lime.Weixin.pdb
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\bin\Debug\Enyim.Caching.pdb
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\bin\Debug\Enyim.Caching.xml
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\obj\Debug\Senparc.Weixin.Cache.Memcached.dll
+F:\weixin\SDK\Limes.Studio\Lime.WeChat\Senparc.Weixin.Cache.Memcached\obj\Debug\Senparc.Weixin.Cache.Memcached.pdb
