@@ -1,0 +1,54 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@Page.Title</title>
+    @Styles.Render("~/adminLTEStyle")
+
+    @Scripts.Render("~/compatibility")
+    <link href="@Url.Content("~/Content/css/font-awesome.min.css")" rel="stylesheet" />
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Main Header -->
+        @{Html.RenderPartial("_Header");}
+
+        <!-- Left side column. contains the logo and sidebar -->
+        @{Html.RenderPartial("_LeftSide");}
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                        @RenderSection("Location", required: false)
+            @RenderSection("Content", required: true)
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Main Footer -->
+        @{Html.RenderPartial("_Footer");}
+        <!-- Control Sidebar -->
+        @{Html.RenderPartial("_ControlSidebar");}
+
+
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- REQUIRED JS SCRIPTS -->
+    @Scripts.Render("~/jquery")
+    @Scripts.Render("~/bootstrap")
+    @Scripts.Render("~/adminLteJs")
+
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+         Both of these plugins are recommended to enhance the
+         user experience. Slimscroll is required when using the
+         fixed layout. -->
+</body>
+</html>
