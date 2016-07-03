@@ -108,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\WeiXinApiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -118,7 +119,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -129,8 +132,40 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lime.Weixin.Cache.Memcached\Lime.Weixin.Cache.Memcached.csproj">
+      <Project>{5b729497-5323-41d7-a104-0632119bedde}</Project>
+      <Name>Lime.Weixin.Cache.Memcached</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lime.Weixin.Cache.Redis\Lime.Weixin.Cache.Redis.csproj">
+      <Project>{729484ca-3aaa-4080-86c6-bc0d0ed7ef9e}</Project>
+      <Name>Lime.Weixin.Cache.Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lime.Weixin.MP.MvcExtension\Lime.Weixin.MP.MvcExtension.csproj">
+      <Project>{50197f41-d5be-408a-8d40-9fe422d937ca}</Project>
+      <Name>Lime.Weixin.MP.MvcExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lime.Weixin.MP\Lime.Weixin.MP.csproj">
+      <Project>{f0a2b586-6378-45a9-81af-cf45d1619404}</Project>
+      <Name>Lime.Weixin.MP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lime.Weixin.Open\Lime.Weixin.Open.csproj">
+      <Project>{db6528b9-b927-4c37-ba64-0b61aa831a8a}</Project>
+      <Name>Lime.Weixin.Open</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lime.Weixin.QY\Lime.Weixin.QY.csproj">
+      <Project>{3ba591c8-b352-4771-ac38-b61bcf122a13}</Project>
+      <Name>Lime.Weixin.QY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lime.Weixin\Lime.Weixin.csproj">
+      <Project>{3472f8a0-f67a-45b7-b8c6-af85bad032d9}</Project>
+      <Name>Lime.Weixin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\test.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
