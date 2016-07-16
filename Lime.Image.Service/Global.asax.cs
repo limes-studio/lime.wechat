@@ -12,8 +12,13 @@ namespace Lime.Image.Service
     {
         protected void Application_Start()
         {
+            string temPath = string.Format(@"{0}\imagemagicTemp",HttpRuntime.AppDomainAppPath);
+            if (!System.IO.Directory.Exists(temPath))
+            {
+                System.IO.Directory.CreateDirectory(temPath);
+            }
             //MagickNET.Initialize(@"C:\Git\cimg");
-            MagickNET.SetTempDirectory(@"C:\Git\cimg");
+            MagickNET.SetTempDirectory(temPath);
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }

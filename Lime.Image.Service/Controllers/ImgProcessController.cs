@@ -7,9 +7,10 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using Lime.Image.Service.Utility;
+using System.Web.Http.Cors;
 namespace Lime.Image.Service.Controllers
 {
-    
+
     public class ImgProcessController : ApiController
     {
 
@@ -67,6 +68,7 @@ namespace Lime.Image.Service.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("api/upload")]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public async Task<HttpResponseMessage> UploadFile()
         {
             HttpContent postContent = Request.Content;
@@ -113,6 +115,7 @@ namespace Lime.Image.Service.Controllers
 
                                 re.Code = true;
                                 re.FileName = filename.ToString();
+                                re.location = filename.ToString();
                                 re.Msg = "OK";
 
                             }
@@ -139,11 +142,12 @@ namespace Lime.Image.Service.Controllers
         }
         [HttpGet]
         [Route("api/{md5:regex(^[a-z0-9]{32}$)}")]
-        public async Task<HttpResponseMessage> Get(string md5,[FromUri] ImageOptions option)
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
+        public async Task<HttpResponseMessage> Get(string md5, [FromUri] ImageOptions option)
         {
             RequestInfo imginfo = new RequestInfo() { filename = md5, options = option };
 
-            HttpResponseMessage res= await ImgProcessHelper.GetImage(imginfo);
+            HttpResponseMessage res = await ImgProcessHelper.GetImage(imginfo);
 
             return res;
         }

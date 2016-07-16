@@ -26,7 +26,9 @@ namespace Lime.Image.Service.Models
         /// The submitter.
         /// </value>
         public string Msg { get; set; }
+
+        public string location { get; set; }
     }
 
-   
+
 }
