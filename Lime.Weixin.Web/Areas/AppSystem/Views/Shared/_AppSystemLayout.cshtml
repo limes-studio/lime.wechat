@@ -24,11 +24,11 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-                        @RenderSection("Location", required: false)
-            @RenderSection("Content", required: true)
+            @RenderBody();
         </div>
         <!-- /.content-wrapper -->
+
+        
         <!-- Main Footer -->
         @{Html.RenderPartial("_Footer");}
         <!-- Control Sidebar -->
