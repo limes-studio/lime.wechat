@@ -17,7 +17,7 @@ namespace Lime.Weixin.Web.Areas.AppSystem
             context.MapRoute(
                 "AppSystem_default",
                 "AppSystem/{controller}/{action}/{id}",
-                new { controller="Home",action = "Home", id = UrlParameter.Optional }
+                new { action = "Home", id = UrlParameter.Optional }
             );
         }
     }
