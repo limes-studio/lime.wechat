@@ -24,9 +24,11 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+
+            @RenderBody()
             <!-- Content Header (Page header) -->
-                        @RenderSection("Location", required: false)
-            @RenderSection("Content", required: true)
+            @*@RenderSection("Location", required: false)
+            @RenderSection("Content", required: true)*@
         </div>
         <!-- /.content-wrapper -->
         <!-- Main Footer -->

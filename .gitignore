@@ -1,4 +1,5 @@
-# ingore list
+# ignore list
 obj/
 bin/
 *.dll
+packages/
