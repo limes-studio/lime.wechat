@@ -31,11 +31,21 @@ namespace Lime.Weixin.Web
                 "~/Content/bootstrap.min.css",
                 "~/Content/css/font-awesome.min.css",
                 "~/admin-lte/css/AdminLTE.min.css",
-                "~/admin-lte/css/skins/skin-blue.min.css",
+                "~/admin-lte/css/skins/*.min.css",
                 "~/Content/css/ionicons.min.css",
                 "~/Areas/AppSystem/Content/css/layout.css"
           ));
             // Code removed for clarity.
+
+            //admin-lte plugins
+            bundles.Add(new ScriptBundle("~/ltePlugins").Include(
+                "~/admin-lte/plugins/pace/pace.min.js"
+                , "~/admin-lte/plugins/slimScroll/jquery.slimScroll.min.js"
+                ));
+
+            bundles.Add(new StyleBundle("~/ltePluginsStyle").Include(
+                "~/admin-lte/plugins/pace/pace.min.css"
+                ));
         }
     }
 }
