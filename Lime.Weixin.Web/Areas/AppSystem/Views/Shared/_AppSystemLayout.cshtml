@@ -9,8 +9,8 @@
     <title>@Page.Title</title>
     @Styles.Render("~/adminLTEStyle")
 
-    @Scripts.Render("~/compatibility")
-    <link href="@Url.Content("~/Content/css/font-awesome.min.css")" rel="stylesheet" />
+    @*@Scripts.Render("~/compatibility")*@
+
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -44,9 +44,10 @@
     </div>
     <!-- ./wrapper -->
     <!-- REQUIRED JS SCRIPTS -->
-    @Scripts.Render("~/jquery")
+    @*@Scripts.Render("~/jquery")
     @Scripts.Render("~/bootstrap")
-    @Scripts.Render("~/adminLteJs")
+    @Scripts.Render("~/adminLteJs")*@
+    @Scripts.Render("~/limejquery")
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
