@@ -122,6 +122,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiControllers\BaseApiController.cs" />
+    <Compile Include="ApiControllers\MaterialController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Areas\AppSystem\AppSystemAreaRegistration.cs" />
     <Compile Include="Areas\AppSystem\Controllers\HomeController.cs" />
@@ -1051,6 +1053,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\AppSystem\Content\fonts\" />
     <Folder Include="Areas\AppSystem\Models\" />
+    <Folder Include="Areas\AppSystem\ViewModels\" />
     <Folder Include="Areas\AppSystem\Views\Partial\" />
     <Folder Include="Models\" />
   </ItemGroup>

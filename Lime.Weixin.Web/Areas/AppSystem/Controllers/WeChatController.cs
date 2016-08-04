@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lime.Weixin.MP.AdvancedAPIs;
+using Lime.Weixin.MP.CommonAPIs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,7 @@ namespace Lime.Weixin.Web.Areas.AppSystem.Controllers
 {
     public class WeChatController : Controller
     {
+        private static readonly String _appId = "";
         //
         // GET: /AppSystem/WeChat/
 
@@ -18,6 +21,7 @@ namespace Lime.Weixin.Web.Areas.AppSystem.Controllers
 
         public PartialViewResult Material()
         {
+           
             return PartialView();
         }
         public PartialViewResult CustomerMenu()
